@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0eeaf839e72bde1f23b53d6860fceb4d",
+    "content-hash": "699e8e0aa6383084905d4535bfd25f99",
     "packages": [
         {
             "name": "consolidation/annotated-command",
@@ -260,16 +260,16 @@
         },
         {
             "name": "consolidation/robo",
-            "version": "2.0.3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/Robo.git",
-                "reference": "7bbc66f9485736e64df6fc946bee1b1deb722667"
+                "reference": "6d6579397d11f31d2a73bbd7a84f3aa187f23074"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/Robo/zipball/7bbc66f9485736e64df6fc946bee1b1deb722667",
-                "reference": "7bbc66f9485736e64df6fc946bee1b1deb722667",
+                "url": "https://api.github.com/repos/consolidation/Robo/zipball/6d6579397d11f31d2a73bbd7a84f3aa187f23074",
+                "reference": "6d6579397d11f31d2a73bbd7a84f3aa187f23074",
                 "shasum": ""
             },
             "require": {
@@ -347,7 +347,7 @@
                 }
             ],
             "description": "Modern task runner",
-            "time": "2020-02-19T01:58:49+00:00"
+            "time": "2020-02-19T01:59:27+00:00"
         },
         {
             "name": "consolidation/self-update",
@@ -3544,7 +3544,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "consolidation/robo": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
