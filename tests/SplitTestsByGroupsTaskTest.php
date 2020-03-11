@@ -48,7 +48,7 @@ class SplitTestsByGroupsTaskTest extends \PHPUnit\Framework\TestCase
 
         $d = $output->fetch();
 
-        self::assertContains('Circular dependency:', $d);
+        self::assertStringContainsString('Circular dependency:', $d);
 
         // make sure that no files were generated.
         $this->assertEmpty(glob("tests/result/group_*"));
@@ -92,7 +92,7 @@ class SplitTestsByGroupsTaskTest extends \PHPUnit\Framework\TestCase
         self::assertSame(['Example2Test.php:testE', 'Example2Test.php:testD', 'Example3Test.php:testF', 'Example3Test.php:testG'], $lines);
     }
 
-    public function setUp()
+    public function setUp():void
     {
         @mkdir('tests/result');
 
